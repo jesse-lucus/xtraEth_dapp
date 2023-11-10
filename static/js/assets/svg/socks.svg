@@ -1,0 +1,595 @@
+var _g, _g2, _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8, _g3, _g4, _g5, _g6, _defs;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgSocks(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 20,
+    height: 20,
+    fill: "none",
+    viewBox: "0 0 20 20",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#a)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "url(#b)",
+    d: "M17.654 4.868c0-.69-.56-1.25-1.25-1.25h-2.932c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.741 1.873c-.898.999-1.115 2.687-.058 3.748 1.013 1.017 2.918.988 3.87 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.158v-7.55Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#c)",
+    d: "M17.654 4.868c0-.69-.56-1.25-1.25-1.25h-2.932c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.741 1.873c-.898.999-1.115 2.687-.058 3.748 1.013 1.017 2.918.988 3.87 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.158v-7.55Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#d)",
+    d: "M17.654 4.868c0-.69-.56-1.25-1.25-1.25h-2.932c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.741 1.873c-.898.999-1.115 2.687-.058 3.748 1.013 1.017 2.918.988 3.87 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.158v-7.55Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#e)",
+    d: "M17.654 4.868c0-.69-.56-1.25-1.25-1.25h-2.932c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.741 1.873c-.898.999-1.115 2.687-.058 3.748 1.013 1.017 2.918.988 3.87 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.158v-7.55Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#f)",
+    d: "M17.654 4.868c0-.69-.56-1.25-1.25-1.25h-2.932c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.741 1.873c-.898.999-1.115 2.687-.058 3.748 1.013 1.017 2.918.988 3.87 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.158v-7.55Z"
+  }))), _g2 || (_g2 = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#g)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "url(#h)",
+    d: "M10.954 2.602c0-.69-.56-1.25-1.25-1.25H6.773c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.742 1.873c-.898 1-1.115 2.687-.058 3.748 1.014 1.018 2.919.988 3.871 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.157V2.602Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#i)",
+    d: "M10.954 2.602c0-.69-.56-1.25-1.25-1.25H6.773c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.742 1.873c-.898 1-1.115 2.687-.058 3.748 1.014 1.018 2.919.988 3.871 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.157V2.602Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#j)",
+    d: "M10.954 2.602c0-.69-.56-1.25-1.25-1.25H6.773c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.742 1.873c-.898 1-1.115 2.687-.058 3.748 1.014 1.018 2.919.988 3.871 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.157V2.602Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#k)",
+    d: "M10.954 2.602c0-.69-.56-1.25-1.25-1.25H6.773c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.742 1.873c-.898 1-1.115 2.687-.058 3.748 1.014 1.018 2.919.988 3.871 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.157V2.602Z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "url(#l)",
+    d: "M10.954 2.602c0-.69-.56-1.25-1.25-1.25H6.773c-.69 0-1.25.56-1.25 1.25v5.704a2.5 2.5 0 0 1-.67 1.703l-1.742 1.873c-.898 1-1.115 2.687-.058 3.748 1.014 1.018 2.919.988 3.871 0l3.167-3.32a3.125 3.125 0 0 0 .864-2.157V2.602Z"
+  }))), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#m)",
+    d: "M17.654 5.776h-5.431v.673h5.431v-.673Z"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#n)",
+    d: "M17.654 5.776h-5.431v.673h5.431v-.673Z"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#o)",
+    d: "M10.955 3.51H5.523v.674h5.432V3.51Z"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#p)",
+    d: "M10.955 3.51H5.523v.674h5.432V3.51Z"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#q)",
+    d: "M17.606 4.523c.031.11.048.225.048.345v.328h-5.431v-.328c0-.12.016-.236.048-.345h5.335Z"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#r)",
+    d: "M17.606 4.523c.031.11.048.225.048.345v.328h-5.431v-.328c0-.12.016-.236.048-.345h5.335Z"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#s)",
+    d: "M10.907 2.257c.031.11.048.225.048.345v.329H5.523v-.329c0-.12.017-.235.049-.345h5.335Z"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    fill: "url(#t)",
+    d: "M10.907 2.257c.031.11.048.225.048.345v.329H5.523v-.329c0-.12.017-.235.049-.345h5.335Z"
+  })), _g3 || (_g3 = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#u)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "url(#v)",
+    d: "M17.654 12.236h-3.116a.173.173 0 0 0-.176.17c0 1.255.904 2.3 2.096 2.518l.332-.349a3.125 3.125 0 0 0 .864-2.157v-.182Z"
+  }))), _g4 || (_g4 = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#w)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "url(#x)",
+    d: "M10.955 9.97H7.839a.173.173 0 0 0-.176.17c0 1.255.903 2.3 2.096 2.518l.332-.349a3.125 3.125 0 0 0 .864-2.156V9.97Z"
+  }))), _g5 || (_g5 = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#y)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "url(#z)",
+    d: "M13.243 18.21v-.05a3.424 3.424 0 0 0-3.856-3.397c-.511.986-.496 2.268.366 3.133.892.895 2.474.98 3.49.314Z"
+  }))), _g6 || (_g6 = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#A)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "url(#B)",
+    d: "M6.544 15.944v-.05a3.424 3.424 0 0 0-3.857-3.396c-.51.985-.495 2.267.366 3.132.892.896 2.475.98 3.49.314Z"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("linearGradient", {
+    id: "b",
+    x1: 17.248,
+    x2: 13.193,
+    y1: 4.4,
+    y2: 16.827,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FDF2FF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFECFB"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "c",
+    x1: 17.654,
+    x2: 15.615,
+    y1: 11.854,
+    y2: 11.854,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFCCF1"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFC5EF",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "f",
+    x1: 14.99,
+    x2: 13.818,
+    y1: 16.932,
+    y2: 15.721,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0.209,
+    stopColor: "#EDB0DF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#ECAAED",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "h",
+    x1: 10.549,
+    x2: 6.493,
+    y1: 2.134,
+    y2: 14.562,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FDF2FF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFECFB"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "i",
+    x1: 10.954,
+    x2: 8.915,
+    y1: 9.588,
+    y2: 9.588,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFCCF1"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFC5EF",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "l",
+    x1: 8.29,
+    x2: 7.119,
+    y1: 14.666,
+    y2: 13.456,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0.209,
+    stopColor: "#EDB0DF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#ECAAED",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "m",
+    x1: 12.773,
+    x2: 16.915,
+    y1: 6.449,
+    y2: 6.449,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#E95FDB"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FF46CB"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "n",
+    x1: 12.223,
+    x2: 12.793,
+    y1: 6.449,
+    y2: 6.449,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#9F4977"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#CA5284",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "o",
+    x1: 6.074,
+    x2: 10.216,
+    y1: 4.184,
+    y2: 4.184,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#E95FDB"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FF46CB"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "p",
+    x1: 5.523,
+    x2: 6.094,
+    y1: 4.184,
+    y2: 4.184,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#9F4977"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#CA5284",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "q",
+    x1: 12.773,
+    x2: 16.915,
+    y1: 5.196,
+    y2: 5.196,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#E95FDB"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FF46CB"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "r",
+    x1: 12.223,
+    x2: 12.793,
+    y1: 5.196,
+    y2: 5.196,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#9F4977"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#CA5284",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "s",
+    x1: 6.074,
+    x2: 10.216,
+    y1: 2.931,
+    y2: 2.931,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#E95FDB"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FF46CB"
+  })), /*#__PURE__*/React.createElement("linearGradient", {
+    id: "t",
+    x1: 5.523,
+    x2: 6.094,
+    y1: 2.931,
+    y2: 2.931,
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#9F4977"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#CA5284",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "d",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "matrix(2.8125 0 0 6.01563 12.02 8.026)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFD1F5"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FECAFF",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "e",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "matrix(1.54348 -1.53472 2.30642 2.31958 11.806 16.12)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFC0FC"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFBCFC",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "j",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "matrix(2.8125 0 0 6.01563 5.322 5.76)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFD1F5"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FECAFF",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "k",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "matrix(1.54347 -1.53473 2.30643 2.31957 5.107 13.854)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    stopColor: "#FFC0FC"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FFBCFC",
+    stopOpacity: 0
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "v",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "matrix(-.42911 2.50572 -2.20218 -.37713 16.437 12.236)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0.147,
+    stopColor: "#FF52CF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FB3FFF"
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "x",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "matrix(-.42911 2.50572 -2.20218 -.37713 9.738 9.97)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0.147,
+    stopColor: "#FF52CF"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 1,
+    stopColor: "#FB3FFF"
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "z",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "rotate(167.471 5.464 9.437) scale(4.54024 4.83245)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0.268,
+    stopColor: "#FF4EE3"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.92,
+    stopColor: "#D12396"
+  })), /*#__PURE__*/React.createElement("radialGradient", {
+    id: "B",
+    cx: 0,
+    cy: 0,
+    r: 1,
+    gradientTransform: "rotate(167.471 2.239 7.937) scale(4.54024 4.83245)",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("stop", {
+    offset: 0.268,
+    stopColor: "#FF4EE3"
+  }), /*#__PURE__*/React.createElement("stop", {
+    offset: 0.92,
+    stopColor: "#D12396"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "a",
+    width: 8.808,
+    height: 15.23,
+    x: 9.045,
+    y: 3.418,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in: "SourceGraphic",
+    in2: "BackgroundImageFix",
+    result: "shape"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dx: 0.2,
+    dy: -0.2
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 0.3
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    k2: -1,
+    k3: 1,
+    operator: "arithmetic"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.522043 0 0 0 0 0.119948 0 0 0 0 0.5875 0 0 0 1 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "shape",
+    result: "effect1_innerShadow_6126_86420"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "g",
+    width: 8.808,
+    height: 15.23,
+    x: 2.346,
+    y: 1.152,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in: "SourceGraphic",
+    in2: "BackgroundImageFix",
+    result: "shape"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dx: 0.2,
+    dy: -0.2
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 0.3
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    k2: -1,
+    k3: 1,
+    operator: "arithmetic"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.545098 0 0 0 0 0.219608 0 0 0 0 0.512549 0 0 0 1 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "shape",
+    result: "effect1_innerShadow_6126_86420"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "u",
+    width: 3.541,
+    height: 2.688,
+    x: 14.112,
+    y: 12.236,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in: "SourceGraphic",
+    in2: "BackgroundImageFix",
+    result: "shape"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dx: -0.25
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 0.25
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    k2: -1,
+    k3: 1,
+    operator: "arithmetic"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.976471 0 0 0 0 0.145098 0 0 0 0 0.743686 0 0 0 1 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "shape",
+    result: "effect1_innerShadow_6126_86420"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "w",
+    width: 3.541,
+    height: 2.688,
+    x: 7.413,
+    y: 9.97,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in: "SourceGraphic",
+    in2: "BackgroundImageFix",
+    result: "shape"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dx: -0.25
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 0.25
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    k2: -1,
+    k3: 1,
+    operator: "arithmetic"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.976471 0 0 0 0 0.145098 0 0 0 0 0.743686 0 0 0 1 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "shape",
+    result: "effect1_innerShadow_6126_86420"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "y",
+    width: 4.448,
+    height: 4.112,
+    x: 9.045,
+    y: 14.536,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in: "SourceGraphic",
+    in2: "BackgroundImageFix",
+    result: "shape"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dx: 0.25,
+    dy: -0.2
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 0.25
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    k2: -1,
+    k3: 1,
+    operator: "arithmetic"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.906118 0 0 0 0 0.329412 0 0 0 0 1 0 0 0 1 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "shape",
+    result: "effect1_innerShadow_6126_86420"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "A",
+    width: 4.448,
+    height: 4.112,
+    x: 2.346,
+    y: 12.27,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in: "SourceGraphic",
+    in2: "BackgroundImageFix",
+    result: "shape"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    in: "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dx: 0.25,
+    dy: -0.2
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 0.25
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    k2: -1,
+    k3: 1,
+    operator: "arithmetic"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.906118 0 0 0 0 0.329412 0 0 0 0 1 0 0 0 1 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "shape",
+    result: "effect1_innerShadow_6126_86420"
+  })))));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgSocks);
+export default __webpack_public_path__ + "static/media/socks.e6b0bda323ae546a877a5c49b95201cb.svg";
+export { ForwardRef as ReactComponent };

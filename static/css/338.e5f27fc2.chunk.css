@@ -1,0 +1,152 @@
+.m29kpj4:disabled {
+    cursor: auto;
+    opacity: .6
+}
+
+._13bxg42 {
+    cursor: pointer;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+._13bxg46 {
+    line-height: 18px
+}
+
+._13bxg48 {
+    box-sizing: border-box;
+    margin-left: -2px;
+    margin-right: 4px
+}
+
+._13bxg4a {
+    box-shadow: 0 4px 16px rgba(10, 10, 59, .2)
+}
+
+._199qdl71 {
+    opacity: .72;
+    overflow: hidden
+}
+
+._1jcz50r3 {
+    scrollbar-width: none
+}
+
+._1jcz50r3::-webkit-scrollbar {
+    display: none
+}
+
+@media (min-width:768px) {
+    ._1jcz50r1 {
+        height: calc(100vh - 72px);
+        width: 360px
+    }
+}
+
+.xstjgw1 {
+    background-color: var(--genie-colors-backgroundSurface);
+    box-shadow: var(--rgw6ezo);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+.xstjgw1:after {
+    border: 1px solid #5d678524;
+    border-radius: 16px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.xstjgw2 {
+    background: linear-gradient(270deg, var(--genie-colors-backgroundOutline) 0, var(--genie-colors-backgroundSurface) 100%)
+}
+
+.xstjgw3 {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15)
+}
+
+.xstjgw5:after {
+    border: 2px solid;
+    border-color: var(--rgw6ez2)
+}
+
+.xstjgw7 {
+    line-height: 16px
+}
+
+.xstjgw9 {
+    vertical-align: top
+}
+
+.xstjgwb {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    letter-spacing: .04em;
+    line-height: 12px
+}
+
+.xstjgwd {
+    margin-left: calc(100% - 50px);
+    -webkit-transform: translateY(-56px);
+    transform: translateY(-56px)
+}
+
+@-webkit-keyframes _2kdvfw0 {
+    0% {
+        background-position: 100% 50%
+    }
+    to {
+        background-position: 0 50%
+    }
+}
+
+@keyframes _2kdvfw0 {
+    0% {
+        background-position: 100% 50%
+    }
+    to {
+        background-position: 0 50%
+    }
+}
+
+._2kdvfw1 {
+    -webkit-animation: _2kdvfw0 1.5s infinite;
+    animation: _2kdvfw0 1.5s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    background: linear-gradient(270deg, #7c85a24d 25%, rgba(0, 0, 0, .3) 50%, #7c85a24d 75%);
+    background-size: 400%;
+    will-change: background-position
+}
+
+._2kdvfw3 {
+    -webkit-user-select: none;
+    user-select: none
+}
+
+._1kuawc1 {
+    margin-left: -4px;
+    margin-right: -4px
+}
+
+._1kuawc1:hover {
+    background: var(--genie-colors-stateOverlayHover)
+}
+
+._1kuawc7 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+
+._1kuawc9,
+._1kuawcb {
+    line-height: 24px
+}
+
+/*# sourceMappingURL=338.e5f27fc2.chunk.css.map*/

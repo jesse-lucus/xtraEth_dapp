@@ -1,0 +1,106 @@
+import { BigNumber } from '@ethersproject/bignumber'
+// eslint-disable-next-line @typescript-eslint/no-restricted-imports
+import { TransactionRequest, TransactionResponse } from '@ethersproject/providers'
+// eslint-disable-next-line no-restricted-imports
+import { Percent } from '@uniswap/sdk-core'
+import { SwapRouter, UNIVERSAL_ROUTER_ADDRESS } from '@uniswap/universal-router-sdk'
+import { FeeOptions, toHex } from '@uniswap/v3-sdk'
+import { useWeb3React } from '@web3-react/core'
+import { useCallback } from 'react'
+
+import { ErrorCode } from '../constants/eip1193'
+import { SwapError } from '../errors'
+import { InterfaceTrade } from '../state/routing/types'
+import { calculateGasMargin } from '../utils/calculateGasMargin'
+import isZero from '../utils/isZero'
+import { getReason, swapErrorToUserReadableMessage } from '../utils/swapErrorToUserReadableMessage'
+import { PermitSignature } from './usePermitAllowance'
+
+interface SwapOptions {
+  slippageTolerance: Percent
+  deadline?: BigNumber
+  permit?: PermitSignature
+  feeOptions?: FeeOptions
+}
+
+function didUserReject(error: any): boolean {
+  const reason = getReason(error)
+  if (
+    error?.code === ErrorCode.USER_REJECTED_REQUEST ||
+    (reason?.match(/request/i) && reason?.match(/reject/i)) || // For Rainbow
+    reason?.match(/declined/i) || // For Frame
+    reason?.match(/cancelled by user/i) || // For SafePal
+    reason?.match(/user denied/i) // For Coinbase
+  ) {
+    return true
+  }
+  return false
+}
+
+//
+// Returns a callback to submit a transaction to the universal router.
+//
+// The callback returns the TransactionResponse if the transaction was submitted,
+// or undefined if the user rejected the transaction.
+//
+export function useUniversalRouterSwapCallback(trade: InterfaceTrade | undefined, options: SwapOptions) {
+  const { account, chainId, provider } = useWeb3React()
+
+  return useCallback(async (): Promise<TransactionResponse | null> => {
+    let tx: TransactionRequest
+    let response: TransactionResponse
+    try {
+      if (!account) throw new Error('missing account')
+      if (!chainId) throw new Error('missing chainId')
+      if (!provider) throw new Error('missing provider')
+      if (!trade) throw new Error('missing trade')
+
+      const { calldata: data, value } = SwapRouter.swapERC20CallParameters(trade, {
+        slippageTolerance: options.slippageTolerance,
+        deadlineOrPreviousBlockhash: options.deadline?.toString(),
+        inputTokenPermit: options.permit,
+        fee: options.feeOptions,
+      })
+      tx = {
+        from: account,
+        to: UNIVERSAL_ROUTER_ADDRESS(chainId),
+        data,
+        // TODO: universal-router-sdk returns a non-hexlified value.
+        ...(value && !isZero(value) ? { value: toHex(value) } : {}),
+      }
+
+      let gasEstimate: BigNumber
+      try {
+        gasEstimate = await provider.estimateGas(tx)
+      } catch (gasError) {
+        console.warn(gasError)
+        throw new SwapError({ header: `Swap Error`, message: `Your swap is expected to fail` })
+      }
+      const gasLimit = calculateGasMargin(gasEstimate)
+      response = await provider.getSigner().sendTransaction({ ...tx, gasLimit })
+    } catch (swapError) {
+      if (didUserReject(swapError)) {
+        return null
+      }
+      const message = swapErrorToUserReadableMessage(swapError)
+      throw new SwapError({
+        message,
+      })
+    }
+    if (tx.data !== response.data) {
+      throw new SwapError({
+        message: `Your swap was modified through your wallet. If this was a mistake, please cancel immediately or risk losing your funds.`,
+      })
+    }
+    return response
+  }, [
+    account,
+    chainId,
+    options.deadline,
+    options.feeOptions,
+    options.permit,
+    options.slippageTolerance,
+    provider,
+    trade,
+  ])
+}
